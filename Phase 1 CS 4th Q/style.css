@@ -1,0 +1,138 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #66ccff, #99cc33);
+}
+
+header {
+    background: linear-gradient(to left, #66ccff, #99cc33);
+    padding: 10px 15px 20px 20px;
+    position: sticky;
+    top: 0;
+    border: solid 10px black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    background: linear-gradient(to left, #66ccff, #99cc33); 
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown li {
+    white-space: nowrap;
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown li a:hover {
+    background-color: whitesmoke;
+}
+
+main {
+    text-align: center;
+    background: linear-gradient(to right, #66ccff, #99cc33);
+    padding: 50px 20px;
+}
+
+.welcome, .bookingForm, .summary {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.welcome h1, .bookingForm h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome button, .summary button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #0055ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.welcome button:hover, .summary button:hover {
+    background-color: #0033cc;
+}
+
+.booking {
+    background: linear-gradient(to right, #66ccff, #99cc33);
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: blue;
+    font-size: x-large;
+    background: linear-gradient(to right, #66ccff, #99cc33);
+}
+
+.booking label {
+    margin-top: 10px;
+}
+
+.booking input, .bookingForm select{
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    background: linear-gradient(to left, #66ccff, #99cc33);
+}
+
+.booking button {
+    background-color: navy;
+    color: navajowhite;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 40%;
+    font-size: 40px;
+}
+
+.booking button:hover {
+    background-color: rgb(35, 35, 148);
+}
+
